@@ -1,5 +1,7 @@
 package com.theironyard;
 
+import sun.plugin2.message.Message;
+
 /**
  * For this exercise you will implement the methods described below. Each of
  * these methods are a type of exercise called a "kata". The word kata comes
@@ -37,6 +39,10 @@ public class StringKatas {
      * @return A string greeting the name. EG: "Hello Bob!"
      */
     // todo: implement helloName() method
+    public static String helloName(String name){
+        String message = "Hello " + name +"!";
+        return message;
+    }
 
     /**
      * Create a publicly accessible static method that does the following:
@@ -61,6 +67,10 @@ public class StringKatas {
      * @return A string with the word `word` placed in the middle of the `out` argument
      */
     // todo: implement makeOutWord() method
+    public static String makeOutWord(String out, String word){
+        String words = out.substring(0,2) + word + out.substring(2,4);
+        return words;
+    }
 
     /**
      * Create a publicly accessible static method that does the following:
@@ -78,6 +88,10 @@ public class StringKatas {
      * @return The first half of the string provided
      */
     // todo: implement firstHalf() method
+    public static String firstHalf(String str){
+        int half = str.length()/2;
+        return str.substring(0,half);
+    }
 
     /**
      * Create a publicly accessible static method that does the following:
@@ -105,5 +119,10 @@ public class StringKatas {
      * @return A string made up of the first n and last n characters of `str` concatenated together
      */
     // todo: implement nTwice() method
+    public static String nTwice(String str, int n){
+        String first=str.substring(0,n);
+        String last=str.substring(str.length()-n,str.length());
+        return first + last;
+    }
 
 }
