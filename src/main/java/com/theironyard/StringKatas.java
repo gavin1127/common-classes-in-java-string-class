@@ -1,6 +1,5 @@
 package com.theironyard;
 
-import sun.plugin2.message.Message;
 
 /**
  * For this exercise you will implement the methods described below. Each of
